@@ -10,7 +10,7 @@ app = Client(
 
 async def send_message_1():
     try:
-        await app.send_message(chat_id=f"{FARM_GROUP_ID}", text=f"{SBIT_MSG}")
+        await app.send_message(chat_id=f"{FARM_GROUP_ID}", text=f"{FARM_MESSAGE}")
         print(f"Message `{FARM_MESSAGE}`, {FARM_GROUP_ID} sended.")
     except Exception as e:
         return
